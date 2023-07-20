@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+        <!-- Contenedor principal -->
     <div class="flex-container">
       <h1>Crea una contraseña segura</h1><br>
+        <!-- Formulario para ingresar la contraseña -->
       <form>
         <input type="text" id="mensaje" placeholder="Ingresa tu contraseña">
       </form>
+       <!-- Sección de la clave -->
       <div class="rango">
         <p>Clave</p>
         <div class="rango-inputs">
@@ -22,6 +25,7 @@
         <button type="button" id="encode" onclick="encode()">CODIFICAR</button>
         <button type="button" id="decode" onclick="decode()">DECODIFICAR</button>
         </div>
+      <!-- Formulario para mostrar la contraseña segura -->
       <form id="codigo"><br>
         <textarea id="respuesta" type="text" placeholder="Contraseña segura" readonly></textarea>
       </form>

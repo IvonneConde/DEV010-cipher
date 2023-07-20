@@ -1,9 +1,7 @@
 import cipher from './cipher.js';
-document.addEventListener("DOMContentLoaded", function() {
-    iniciar();
-  });
-const encode = cipher.encode;
-const decode =cipher.decode;
+document.addEventListener("DOMContentLoaded", function() {  // Espera a que el DOM esté completamente cargado para iniciar la función 'iniciar()'
+  iniciar();
+});
 
 function iniciar() {
   document.getElementById("mensaje").addEventListener(
@@ -14,22 +12,25 @@ function iniciar() {
     true
   );
 
+  // Escucha el evento 'click' en el botón con id 'encode'
+  // Obtiene el mensaje y el offset del campo de entrada de texto y rango respectivamente
+  // Llama a la función 'encode' del módulo 'cipher' para cifrar el mensaje con el offset
+  // y muestra el resultado en el campo de texto con id 'respuesta'
   document.getElementById("encode").addEventListener(
-    "click",
-    function () {
-          let mensaje = document.getElementById("mensaje").value;
-          let offset = parseInt(document.getElementById("offset").value);
-
-          document.getElementById("respuesta").value = cipher.encode(mensaje, offset);
-      },
-    true
+    "click",    // Argumento
+    function () {    // Argumento
+      const mensaje = document.getElementById("mensaje").value;      // Obtener el mensaje del usuario
+      const offset = parseInt(document.getElementById("offset").value);      // Obtener el desplazamiento (offset) ingresado por el usuario
+      document.getElementById("respuesta").value = cipher.encode(mensaje, offset);
+    },
+    true  // Argumento
   );
 
   document.getElementById("decode").addEventListener(
     "click",
     function () {
-      let mensaje = document.getElementById("mensaje").value;
-      let offset = parseInt(document.getElementById("offset").value);
+      const mensaje = document.getElementById("mensaje").value;
+      const offset = parseInt(document.getElementById("offset").value);
       document.getElementById("respuesta").value = cipher.decode(mensaje, offset);
     },
     true

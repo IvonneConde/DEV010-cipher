@@ -3,8 +3,8 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
+    height: 100vh;   /* Establece la altura del cuerpo a 100% del alto de la ventana (viewport height) */
+    display: flex;   /* Flex: Centra todo el contenido del cuerpo verticalmente y horizontalmente */
     justify-content: center;
     align-items: center;
     background-color: #222;
@@ -12,8 +12,8 @@ body {
 }
 .flex-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;   /*Organiza los elementos en columna */
+    align-items: center;      /*Centra los elementos horizontalmente */
     background: #444;
     margin: 70px 70px;
     padding: 30px;
@@ -84,7 +84,7 @@ button {
 }
 
 .botones {
-    display: flex;
+    display: flex;  /*Distribuye el espacio disponible entre los elementos */
     justify-content: space-between;
     margin-top: 20px;
   }
