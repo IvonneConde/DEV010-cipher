@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script src="index.js" type="module"></script>
         <!-- Contenedor principal -->
     <div class="flex-container">
       <h1>Crea una contraseña segura</h1><br>
@@ -17,13 +18,13 @@
       <div class="rango">
         <p>Clave</p>
         <div class="rango-inputs">
-          <input id="offset" type="range" value="5" min="1" max="5" oninput="this.nextElementSibling.value = this.value" class="custom-range">
-          <output>5</output>
+          <input id="offset" type="range" value="" min="1" max="10" oninput="this.nextElementSibling.value = this.value" class="custom-range">
+          <output></output>
         </div>
       </div>
-      <div class="botones">
-        <button type="button" id="encode" onclick="encode()">CODIFICAR</button>
-        <button type="button" id="decode" onclick="decode()">DECODIFICAR</button>
+      <div class= "botones">
+        <button type="button" id="encode">CODIFICAR</button>
+        <button type="button" id="decode">DECODIFICAR</button>
         </div>
       <!-- Formulario para mostrar la contraseña segura -->
       <form id="codigo"><br>
@@ -32,7 +33,9 @@
     </div>
     <div id="root">
     </div>
-    <script src="index.js" type="module"></script>
   </body>
+  <footer>
+    <div class="footer">Tu seguridad es nuestra prioridad. ¡Crea contraseñas fuertes!</div>
+  </footer>
 </html>
 
