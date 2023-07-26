@@ -71,25 +71,31 @@ Esperamos que puedas sacarle el mayor provecho.
 
 ### 5.1 Flujo de trabajo y organización
 Para poder realizar este proyecto empecé creando un boceto y las tareas que debía realizar para lograr el objetivo apoyándome de [Miro](https://miro.com/app/board/uXjVM0ahpsA=/).
+
 ![flujo de trabajo](src/img/flujodetrabajo.jpg)
 
 ![Voceto](src/img/boceto.jpg)
 
 ### 5.2 Diseño
+
 El diseño de esta herramienta es sencillo, minimalista y fácil de usar. La interfaz es sencilla y misteriosa 🕵🏻‍♀️.
 
  - La primera vista que tiene el usuario es una pantalla oscura con un recuadro en el centro, donde se hará el cifrado y descifrado de su contraseña.
+
 ![Vista principal](src/img/vistaprincipal.jpg)
 
  - Ingresamos la contraseña que queremos cifrar, damos click en "Cifrar", la respuesta que nos da abajo es lo que podemos usar como contraseña segura.
+
 ![Cifrado](src/img/cifrar.jpg)
 
  - Para descifrar nuestra contraseña en caso de que lo hayamos olvidado o queramos confirmarla, copiamos el resultado para pegarlo en el primer recuadro y damos click en "Descifrar" y confirmamos que sea el texto o palabra que ingresamos al principio. 
+
 ![Descifrado](src/img/descifrar.jpg)
 
 ****
 
 **. Pruebas unitarios de los métodos.**  
+
 Los metódos de `cipher` (`encode` y `decode`) deben tener cobertura con pruebas unitarias.
 
 ![Prueba aprobada](/src/img/pruebaaprobada.jpg)
@@ -97,9 +103,11 @@ Los metódos de `cipher` (`encode` y `decode`) deben tener cobertura con pruebas
 ******
 
 Usa nuestro [cifrador aquí](https://ivonneconde.github.io/DEV010-cipher/)
+
 ![github pages](src/img/githubpages.jpg)
 
 #### Desarrolladora 
+
 Ivonne Rodríguez Conde, desarrolladora en proceso con [Laboratoria](https://www.laboratoria.la/)
 
 #### "Contraseñas fuertes para una mayor protección en línea."

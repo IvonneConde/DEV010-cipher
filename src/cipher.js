@@ -1,11 +1,11 @@
 const cipher = {
-  encode: function (offset, mensaje) {
+  encode: function (offset, mensaje) {  //parámetros offset y mensaje
     if (typeof mensaje !== 'string' || typeof offset !== 'number') {
       throw new TypeError('La contraseña y el desplazamiento deben ser de tipo string y number respectivamente');
-    }
+    }   // esto garantiza que la función no se ejecute si los argumentos no cumplen con los requisitos necesarios.
 
     let resultado = '';
-    for (let i = 0; i < mensaje.length; i++) {
+    for (let i = 0; i < mensaje.length; i++) {  //recorre cada carácter y obtiene su código ASCII para luego proceder con el cifrado
       const c = mensaje.charCodeAt(i);  //charCodeAt este MÉTODO se usa para obtener el valor de un caracter de un string que ya existe
 
       if (c >= 65 && c <= 90) {
