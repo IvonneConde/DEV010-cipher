@@ -3,12 +3,13 @@
 }
 
 body {
-    height: 100vh;   /* Establece la altura del cuerpo a 100% del alto de la ventana (viewport height) */
+    /* height: 100vh;   Establece la altura del cuerpo a 100% del alto de la ventana (viewport height) */
     display: flex;   /* Flex: Centra todo el contenido del cuerpo verticalmente y horizontalmente */
     justify-content: center;
     align-items: center;
     background-color: #222;
     color: #ffffff;
+    box-sizing: border-box;
 }
     
 .flex-container{
